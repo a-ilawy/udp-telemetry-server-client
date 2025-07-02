@@ -13,6 +13,7 @@ udp-telemetry-server-client/
 ├── client.cpp                  # C++ UDP client (IoT device simulator)
 ├── server.js                   # Node.js UDP server
 └── README.md                   # Project documentation
+└── demo.mp4                    # Demo video
 ```
 ### 🛰️ Sample Telemetry Packet
 
@@ -24,3 +25,4 @@ udp-telemetry-server-client/
   "humidity": 45.2
 }
 ```
+### ▶️ [Demo video](https://youtu.be/ckj3uGowqQ4)

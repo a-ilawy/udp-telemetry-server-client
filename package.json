@@ -1,0 +1,21 @@
+{
+  "name": "udp-telemetry-server-client-main",
+  "version": "1.0.0",
+  "description": "A lightweight, real-time telemetry system for IoT devices using **UDP**:",
+  "homepage": "https://github.com/a-ilawy/udp-telemetry-server-client#readme",
+  "bugs": {
+    "url": "https://github.com/a-ilawy/udp-telemetry-server-client/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a-ilawy/udp-telemetry-server-client.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  }
+}
