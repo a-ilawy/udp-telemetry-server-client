@@ -1,6 +1,8 @@
 /*
 ==> Compile to get .exe file 
-    g++ client.cpp -o client.exe -lws2_32
+    1- g++ client.cpp -o client.exe -lws2_32
+    2- client.exe sensor_01
+    3- client.exe sensor_02
     
 ==> Note if the server stopped the client will keep running and sending UDP packets
         because:
