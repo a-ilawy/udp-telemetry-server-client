@@ -1,3 +1,12 @@
+/*
+==> Compile to get .exe file 
+    g++ client.cpp -o client.exe -lws2_32
+    
+==> Note if the server stopped the client will keep running and sending UDP packets
+        because:
+              UDP is connectionless – the client doesn't establish or maintain a connection with the server.
+*/
+
 #include <winsock2.h>
 #include <ws2tcpip.h>
 #include <iostream>
@@ -53,7 +62,6 @@ int main(int argc, char* argv[]) {
 
         std::time_t timestamp = std::time(nullptr);
 
-        // Create JSON string
         std::string json = "{\n"
             "\"device_id\":\"" + deviceId + "\",\n"
             "\"timestamp\":" + std::to_string(timestamp) + ",\n" +
@@ -78,10 +86,3 @@ int main(int argc, char* argv[]) {
     WSACleanup();
     return 0;
 }
-
-
-// Compile to get .exe file 
-// g++ client.cpp -o client.exe -lws2_32
-// Note if the server stopped the client will keep running and sending UDP packets
-// because 
-//      UDP is connectionless – the client doesn't establish or maintain a connection with the server.
